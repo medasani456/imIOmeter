@@ -11,28 +11,28 @@ def zipdir(path, ziph):
 if __name__=='__main__':
 
 	#create local directory
-	if os.path.isdir("ezIOmeter"):
-		shutil.rmtree("ezIOmeter")	
-	os.makedirs("ezIOmeter")
+	if os.path.isdir("imIOmeter"):
+		shutil.rmtree("imIOmeter")	
+	os.makedirs("imIOmeter")
 
 	#make some necessary directories under the root directory	
-	os.makedirs("ezIOmeter/Results")	
+	os.makedirs("imIOmeter/Results")	
 	
 	#copy files and directories to the root directory
-	shutil.copy("../bin/Release/ezIOmeter.exe","ezIOmeter/ezIOmeter.exe")
-	shutil.copy("../bin/Release/ezIOmeter_Lib.dll","ezIOmeter/ezIOmeter_Lib.dll")
-	shutil.copy("../bin/Release/settings.conf","ezIOmeter/settings.conf")
-	shutil.copy("../bin/Release/MathNet.Numerics.dll","ezIOmeter/MathNet.Numerics.dll")
-	shutil.copy("../bin/Release/MathNet.Numerics.xml","ezIOmeter/MathNet.Numerics.xml")
-	shutil.copy("../Documentation/ezIOmeter_User_Guide.pdf","ezIOmeter/ezIOmeter_User_Guide.pdf")
-	shutil.copy("README.txt","ezIOmeter/README.TXT")
-	shutil.copytree("../bin/Release/IOmeter","ezIOmeter/IOmeter")
-	shutil.copytree("../bin/Release/IOmeterConfigFiles","ezIOmeter/IOmeterConfigFiles")
-	shutil.copytree("Support","ezIOmeter/Support")
+	shutil.copy("../bin/Release/imIOmeter.exe","imIOmeter/imIOmeter.exe")
+	shutil.copy("../bin/Release/ezIOmeter_Lib.dll","imIOmeter/ezIOmeter_Lib.dll")
+	shutil.copy("../bin/Release/settings.conf","imIOmeter/settings.conf")
+	shutil.copy("../bin/Release/MathNet.Numerics.dll","imIOmeter/MathNet.Numerics.dll")
+	shutil.copy("../bin/Release/MathNet.Numerics.xml","imIOmeter/MathNet.Numerics.xml")
+	shutil.copy("../Documentation/imIOmeter_User_Guide.pdf","imIOmeter/imIOmeter_User_Guide.pdf")
+	shutil.copy("README.txt","imIOmeter/README.TXT")
+	shutil.copytree("../bin/Release/IOmeter","imIOmeter/IOmeter")
+	shutil.copytree("../bin/Release/IOmeterConfigFiles","imIOmeter/IOmeterConfigFiles")
+	shutil.copytree("Support","imIOmeter/Support")
 		
 	#create zip file
-	if os.path.exists("ezIOmeter.zip"):
-		os.remove("ezIOmeter.zip")
-	zipf = zipfile.ZipFile('ezIOmeter.zip','w')
-	zipdir('ezIOmeter',zipf)	
+	if os.path.exists("imIOmeter.zip"):
+		os.remove("imIOmeter.zip")
+	zipf = zipfile.ZipFile('imIOmeter.zip','w')
+	zipdir('imIOmeter',zipf)	
 	zipf.close()
