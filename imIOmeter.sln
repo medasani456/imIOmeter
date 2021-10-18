@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imIOmeter_Lib", "imIOmeter-Lib\imIOmeter_Lib.csproj", "{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imIOmeter", "imIOmeter\imIOmeter.csproj", "{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		IM_Test|Any CPU = IM_Test|Any CPU
+		IMPrefTest|Any CPU = IMPrefTest|Any CPU
+		IMTool|Any CPU = IMTool|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IM_Test|Any CPU.ActiveCfg = IM_Test|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IM_Test|Any CPU.Build.0 = IM_Test|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IMPrefTest|Any CPU.ActiveCfg = IMPrefTest|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IMPrefTest|Any CPU.Build.0 = IMPrefTest|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IMTool|Any CPU.ActiveCfg = IMTool|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.IMTool|Any CPU.Build.0 = IMTool|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF505103-2722-4E11-8E53-E4C1A1C1BC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IM_Test|Any CPU.ActiveCfg = IM_Test|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IM_Test|Any CPU.Build.0 = IM_Test|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IMPrefTest|Any CPU.ActiveCfg = IMPrefTest|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IMPrefTest|Any CPU.Build.0 = IMPrefTest|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IMTool|Any CPU.ActiveCfg = IMTool|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.IMTool|Any CPU.Build.0 = IMTool|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C022AD-3FA4-493C-BBC7-E385FACBBA55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {529B511C-3830-485A-A786-D6B3CCF3B763}
+	EndGlobalSection
+EndGlobal
