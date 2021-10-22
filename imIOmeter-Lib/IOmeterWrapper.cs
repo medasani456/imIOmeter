@@ -87,10 +87,10 @@ namespace imIOmeter_Lib
         public bool LoadIOmeterConfigFiles(String config_files_path_p)
         {
             display_message("Loading configuration setting...");
-
+            
             // Get the list of icf files to run.
             config_files = Directory.GetFiles(config_files_path_p, "*.icf");
-            
+            Console.WriteLine("LoadIOmeterConfigFiles venkat :" + config_files.Length);
             if (config_files.Length > 0)
                 return true;
 
@@ -121,7 +121,8 @@ namespace imIOmeter_Lib
             for (int order_count = 0; order_count < workload_order.Length; order_count++)
             { 
                 for (int count = 0; count < config_files.Length; count++)
-                {                   
+                {
+                    Console.WriteLine("test venkat :" + count);
                     // Get the .icf file path.
                     String file_path = config_files[count];
 

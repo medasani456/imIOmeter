@@ -1,0 +1,41 @@
+﻿<Window x:Class="imIOmeter.UpdateICFFile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:imIOmeter"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="119*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="267,10,0,0" TextWrapping="Wrap" Text="Updated all workload paarameters" VerticalAlignment="Top" Width="Auto" Height="Auto" HorizontalAlignment="Center"/>
+        <Button x:Name="Update_Workload_Parametrs" Content="Update"  Click="Button_Click" Margin="320,391,114,0" Width="120" Height="30" HorizontalAlignment="Center" />
+
+        <TextBox IsReadOnly="True" Margin="35,47,382,351" Text="Mean IOps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox IsReadOnly="True" Margin="35,78,382,320" Text="Stdev IOps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="35,116,382,282" Text="Min IOps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="35,182,382,216" Text="Mean MBps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="44,259,390,139" Text="Min MBps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="44,290,390,108" Text="Max MBps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="35,147,382,251" Text="Max IOps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="44,221,390,177" Text="Stdev MBps" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox IsReadOnly="True" Margin="44,316,390,82" Text="Latency" Width="120" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="meanIOps" IsReadOnly="False" Margin="188,47,234,351" Text="" TextChanged="TextBox_meanIOps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="StdevIOps" IsReadOnly="False" Margin="188,78,234,320" Text="" TextChanged="TextBox_StdevIOps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="minIOps" IsReadOnly="False" Margin="188,116,234,282" Text="" TextChanged="TextBox_minIOps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="meanMBps" IsReadOnly="False" Margin="188,182,234,216" Text="" TextChanged="TextBox_meanMBps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="minMBps" IsReadOnly="False" Margin="194,259,240,139" Text="" TextChanged="TextBox_minMBps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="maxIOps" IsReadOnly="False" Margin="188,147,234,251" Text="" TextChanged="TextBox_maxIOps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="maxMBps" IsReadOnly="False" Margin="194,290,240,108" Text="" TextChanged="TextBox_maxMBps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="StdevMBps" IsReadOnly="False" Margin="194,221,240,177" Text="" TextChanged="TextBox_StdevMBps" Width="120" Height="21" HorizontalAlignment="Center"/>
+        <TextBox x:Name="mlatency" IsReadOnly="False" Margin="194,316,240,82" Text="" TextChanged="TextBox_mlatency" Width="120" Height="21" HorizontalAlignment="Center"/>
+
+    </Grid>
+
+
+
+</Window>

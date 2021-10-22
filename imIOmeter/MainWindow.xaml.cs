@@ -44,6 +44,10 @@ namespace imIOmeter
 
         public MainWindow()
         {
+            Tabs testPanel = new Tabs();
+
+            testPanel.ShowDialog();
+
             //make sure that the Restuls folder exists
             if (Directory.Exists("Results") == false)
             {
@@ -386,6 +390,16 @@ namespace imIOmeter
         {
             eventTimmer.Stop();
             HideToastMessage();
+        }
+
+        private void LoadUpdate(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show("New help Window Open");
+            //UpdateICFFile testPanel = new UpdateICFFile();
+            Tabs testPanel = new Tabs();
+
+            testPanel.ShowDialog();
+            
         }
     }
 }
